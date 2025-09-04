@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfie Camera with Filters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Fun Selfie Camera 🎉</h1>
+        <video id="video" autoplay></video>
+        <canvas id="canvas"></canvas>
+        <div class="controls">
+            <button id="capture">📸 Capture</button>
+            <button id="reset">🔄 Reset</button>
+        </div>
+        <div class="filters">
+            <button class="filter-btn" data-filter="none">None</button>
+            <button class="filter-btn" data-filter="sepia(1)">Sepia</button>
+            <button class="filter-btn" data-filter="grayscale(1)">Grayscale</button>
+            <button class="filter-btn" data-filter="invert(1)">Invert</button>
+            <button class="filter-btn" data-filter="brightness(1.5)">Bright</button>
+            <button class="filter-btn" data-filter="contrast(1.5)">Contrast</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
